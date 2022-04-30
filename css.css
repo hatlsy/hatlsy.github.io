@@ -47,14 +47,14 @@ body,
 			line-height: 30px;
 		}
 
-		.form {
+		.from {
 			margin-left: 20px;
 		}
 		
 		
 		@media screen and (max-width:520px) {
 			.bt{font-size: 1.35rem;}
-			.form{font-size: 1.125rem;}
+			.from{font-size: 1.125rem;}
 			.title{padding: 0 20px;}
 			
 		}

@@ -7,61 +7,8 @@
 		<meta http-equiv="Cache-Control" content="no-transform" />
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<title>Ryou</title>
+		<link rel="stylesheet" type="text/css" href="css.css"/>
 	</head>
-	<style type="text/css">
-		body,
-		html {
-			padding: 0;
-			margin: 0;
-		}
-
-		body {
-			width: 100%;
-			height: 100vh;
-			animation: linears 15s infinite;
-			background: linear-gradient(125deg, #2980b9, #633bd3, #8e44ad, #192f44, #27ae60);
-			background-size: 800%;
-			z-index: -99;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			color: white;
-			text-align: center;
-		}
-
-		@keyframes linears {
-			0% {
-				background-position: 0% 50%;
-			}
-
-			50% {
-				background-position: 100% 50%;
-			}
-
-			100% {
-				background-position: 0% 50%;
-			}
-		}
-
-		.foot {
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-		}
-
-		.foot p {
-			font-size: 1.125rem;
-			color: white;
-			text-align: center;
-			height: 30px;
-			line-height: 30px;
-		}
-
-		.form {
-			margin-left: 20px;
-		}
-	</style>
 	<body>
 		<div class="title">
 			<h1 class="bt"></h1>
@@ -71,16 +18,6 @@
 		<div class="foot">
 			<p>by：Ryou</p>
 		</div>
-		<script type="text/javascript">
-			fetch('https://v1.hitokoto.cn')
-				.then(response => response.json())
-				.then(data => {
-					const hitokoto = document.querySelector('.bt')
-					const fom = document.querySelector('.form')
-					hitokoto.innerText = data.hitokoto
-					fom.innerText = data.from
-				})
-				.catch(console.error)
-		</script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
